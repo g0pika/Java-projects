@@ -1,10 +1,7 @@
 public class matrixOperations {
     public static void rotateMatrix(int[][] mat)
     {
-        // Transpose the matrix
         transpose(mat);
-
-        // Reverse rows
         reverseRows(mat);
     }
 
@@ -14,8 +11,6 @@ public class matrixOperations {
         for (int i = 0; i < mat.length; i++)
             reverse(mat[i]);
     }
-
-    // Function to transpose the matrix
     static void transpose(int mat[][])
     {
         for (int i = 0; i < mat.length; i++)
@@ -26,8 +21,6 @@ public class matrixOperations {
                 mat[j][i] = x;
             }
     }
-
-    // Function to reverse an array
     static void reverse(int arr[])
     {
         int i = 0, j = arr.length - 1;
